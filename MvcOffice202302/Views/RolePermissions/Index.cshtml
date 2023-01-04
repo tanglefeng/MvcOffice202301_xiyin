@@ -1,0 +1,60 @@
+﻿@*@model IEnumerable<MvcOffice.Models.RolePermission>
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>登陆界面</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RolePassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rolesubordinate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RolePassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rolesubordinate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RoleId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RoleId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RoleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@
+@model MvcOffice.Models.RolePermission
+<form asp-action="Loginvalidate">
+   @* RoleName { get; set; }
+    public string? RolePassword {*@
+    <label>用户名：</label>
+    <input type="text" value="tanglefeng" name="RoleName" />
+ <label>密码：</label>
+    <input type="password" value="kejie1234" name="RolePassword" />
+    <div class="form-group">
+        <input type="submit" value="登录" class="btn btn-primary" />
+    </div>
+</form>

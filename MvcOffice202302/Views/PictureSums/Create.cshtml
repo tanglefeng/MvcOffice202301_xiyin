@@ -1,0 +1,59 @@
+﻿@model MvcOffice.Models.PictureSum
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PictureSum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PictureSumId" class="control-label"></label>
+                <input asp-for="PictureSumId" class="form-control" />
+                <span asp-validation-for="PictureSumId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" value="123"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="srcaddress" class="control-label"></label>
+                @*<input asp-for="srcaddress" class="form-control"  value=~/css/xx.jpg/>*@
+                <input asp-for="srcaddress" class="form-control" value=xx />
+                <span asp-validation-for="srcaddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="description" class="control-label"></label>
+                <input asp-for="description" class="form-control" value="123"/>
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="detail" class="control-label"></label>
+                <input asp-for="detail" class="form-control"value="123" />
+                <span asp-validation-for="detail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="detail2" class="control-label"></label>
+                <input asp-for="detail2" class="form-control"value="123" />
+                <span asp-validation-for="detail2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,234 @@
+﻿@model IEnumerable<MvcOffice.Models.TimeSetAlarm>
+@*using baokao;*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-action="NearDate">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AlarmName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.baoming)
+                (填报)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.signupTime)
+                (确认)
+            </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.payTime)
+                    (缴费)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.printTime)
+                    (打印)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.writtenExaminationTime)
+                (笔试)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InterviewTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hysicalExaminationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProposedAdmissionTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportingTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlarmName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.baoming)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.signupTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.payTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.printTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.writtenExaminationTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InterviewTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hysicalExaminationTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProposedAdmissionTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReportingTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AlarmId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AlarmId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AlarmId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+   
+   @* <div class="form-group" >
+        <input type="submit" value="临近报名时间" class="btn btn-primary"  />
+    </div>*@
+</form>
+@*<form asp-action="NearConfirmDay">
+    <div class="form-group">
+        <input type="submit" value="临近信息确认时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearPayDay">
+    <div class="form-group">
+        <input type="submit" value="临近网上缴费日期" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearPrintDay">
+    <div class="form-group">
+        <input type="submit" value="临近准考证打印时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form  asp-action="NearWiteDay">
+    <div class="form-group">
+        <input type="submit" value="临近笔试时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearInterviewDay">
+    <div class="form-group">
+        <input type="submit" value="临近面试时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form asp-action="NearhysicalExaminationDay">
+    <div class="form-group">
+        <input type="submit" value="临近体检时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearProposedAdmissionDay">
+    <div class="form-group">
+        <input type="submit" value="临近拟录取时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form asp-action="NearReportingDay">
+    <div class="form-group">
+        <input type="submit" value="临近报道时间" class="btn btn-primary" />
+    </div>
+</form>*@
+@*<select class="form-control"  asp-items="ViewBag.aokao" >
+    <option disabled selected value="">Select a kind to query</option>
+</select>
+<button asp-action="Chooseselct" >计算</button>*@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+               @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MvcOffice20221130</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>*@
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="RolePermissions" asp-action="Index">Back</a>
+                        </li>
+                        
+                     <form asp-action="NearDate">
+    <div class="form-group">
+        <input type="submit" value="临近报名时间" class="btn btn-primary" />
+    </div>
+</form>
+                     <form asp-action="NearConfirmDay">
+    <div class="form-group">
+        <input type="submit" value="临近信息确认时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearPayDay">
+    <div class="form-group">
+        <input type="submit" value="临近网上缴费日期" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearPrintDay">
+    <div class="form-group">
+        <input type="submit" value="临近准考证打印时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form  asp-action="NearWiteDay">
+    <div class="form-group">
+        <input type="submit" value="临近笔试时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearInterviewDay">
+    <div class="form-group">
+        <input type="submit" value="临近面试时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form asp-action="NearhysicalExaminationDay">
+    <div class="form-group">
+        <input type="submit" value="临近体检时间" class="btn btn-primary" />
+    </div>
+</form>
+<form asp-action="NearProposedAdmissionDay">
+    <div class="form-group">
+        <input type="submit" value="临近拟录取时间" class="btn btn-primary" />
+    </div>
+</form>
+
+<form asp-action="NearReportingDay">
+    <div class="form-group">
+        <input type="submit" value="临近报道时间" class="btn btn-primary" />
+    </div>
+</form>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - MvcOffice20221130 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+ 
+</body>
+</html>

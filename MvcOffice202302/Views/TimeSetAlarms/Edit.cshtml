@@ -1,0 +1,79 @@
+﻿@model MvcOffice.Models.TimeSetAlarm
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TimeSetAlarm</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AlarmId" />
+            <div class="form-group">
+                <label asp-for="AlarmName" class="control-label"></label>
+                <input asp-for="AlarmName" class="form-control" />
+                <span asp-validation-for="AlarmName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="baoming" class="control-label"></label>
+                <input asp-for="baoming" class="form-control" />
+                <span asp-validation-for="baoming" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="signupTime" class="control-label"></label>
+                <input asp-for="signupTime" class="form-control" />
+                <span asp-validation-for="signupTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="payTime" class="control-label"></label>
+                <input asp-for="payTime" class="form-control" />
+                <span asp-validation-for="payTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="printTime" class="control-label"></label>
+                <input asp-for="printTime" class="form-control" />
+                <span asp-validation-for="printTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="writtenExaminationTime" class="control-label"></label>
+                <input asp-for="writtenExaminationTime" class="form-control" />
+                <span asp-validation-for="writtenExaminationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InterviewTime" class="control-label"></label>
+                <input asp-for="InterviewTime" class="form-control" />
+                <span asp-validation-for="InterviewTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hysicalExaminationTime" class="control-label"></label>
+                <input asp-for="hysicalExaminationTime" class="form-control" />
+                <span asp-validation-for="hysicalExaminationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProposedAdmissionTime" class="control-label"></label>
+                <input asp-for="ProposedAdmissionTime" class="form-control" />
+                <span asp-validation-for="ProposedAdmissionTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReportingTime" class="control-label"></label>
+                <input asp-for="ReportingTime" class="form-control" />
+                <span asp-validation-for="ReportingTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

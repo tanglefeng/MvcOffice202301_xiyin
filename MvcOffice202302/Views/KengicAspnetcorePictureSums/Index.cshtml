@@ -1,0 +1,115 @@
+﻿@*@model IEnumerable<MvcOffice.Models.KengicAspnetcorePictureSum>*@
+@model PaginatedList<MvcOffice.Models.KengicAspnetcorePictureSum>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-action="KengicAspNetCorePictureDisplay" method="get">
+    <div class="form-actions no-color">
+        <p>
+        @*    name为传参 value为实参*@
+            Find by Url: 
+            <input type="text" name="SearchString"  />
+            @*<input type="text" name="sortOrder" value="@Model.DateSort" />*@
+           
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-action="./Index">Back to full List</a>
+        </p>
+    </div>
+</form>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.srcaddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detail2)
+            </th>*@
+             <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"> Name</a>
+            </th>
+            <th>
+                description
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DescriptionSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">detail</a>
+            </th>
+             <th>
+                RowVersion
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.srcaddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.detail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.detail2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KengicAspnetcorePictureSumId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KengicAspnetcorePictureSumId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KengicAspnetcorePictureSumId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
+<p>共有页数为 <td>
+              @ViewData["PageTotal"]
+            </td></p>

@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MvcOffice
+build_property.RootNamespace = MvcOffice
+build_property.ProjectDir = D:\Python Visual Studio\MvcOffice\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Python Visual Studio\MvcOffice
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Python Visual Studio/MvcOffice/Views/HelloWorld/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspnetcorePictureSums/KengicAspNetCorePictureDisplay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwbmV0Y29yZVBpY3R1cmVTdW1zXEtlbmdpY0FzcE5ldENvcmVQaWN0dXJlRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspNetCores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwTmV0Q29yZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspNetCores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwTmV0Q29yZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspNetCores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwTmV0Q29yZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspNetCores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwTmV0Q29yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/KengicAspNetCores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZ2ljQXNwTmV0Q29yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/PictureSums/PictureDisplay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGljdHVyZVN1bXNcUGljdHVyZURpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Uniquedoors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pcXVlZG9vcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Uniquedoors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pcXVlZG9vcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Uniquedoors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pcXVlZG9vcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Uniquedoors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pcXVlZG9vcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Uniquedoors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pcXVlZG9vcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Python Visual Studio/MvcOffice/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h126ppooc5
